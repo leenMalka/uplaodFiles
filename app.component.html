@@ -1,0 +1,22 @@
+<div class="dropable" (drop)="drop($event)"  (dragover)="allowDrop($event)">
+  <h2> גרור קבצים לכאן</h2>
+  <p>או אם אתה מעדיף...</p>
+  <button mat-button color="warn" (click)="addFile()" type="button">
+    <!-- <mat-icon>file_upload</mat-icon> -->
+   בחר קבצים להעלאה
+  </button>
+  <input type="file" id="fileUpload" name="fileUpload" multiple="multiple" accept="{{accept}}" style="display:none;" />
+
+</div>
+<table>
+  <tr *ngFor="let file of files" [@fadeInOut]="file.state">
+    <td>
+      {{file.data.name}}
+    </td>
+    <td class="file-label">
+      <a title="Cancel" (click)="cancelFile(file)">
+        <mat-icon>cancel</mat-icon>
+      </a>
+    </td>
+  </tr>
+</table>
