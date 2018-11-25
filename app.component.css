@@ -1,0 +1,22 @@
+.dropable{
+    width: 500px;
+    height: 150px;
+    padding-bottom: 14px;
+    border: 2px dashed #ccc;
+    text-align: center;
+    color: #ccc;
+}
+p{
+    margin-bottom: 3px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.mat-button.mat-warn, .mat-icon-button.mat-warn, .mat-stroked-button.mat-warn {
+    border: 1px solid #f44336!important;
+}
+.mat-button.mat-warn, .mat-icon-button.mat-warn, .mat-stroked-button.mat-warn {
+    width: 120px!important;
+    padding: 0!important;
+    font-size: 11px!important;
+    line-height: 25px!important;
+}
